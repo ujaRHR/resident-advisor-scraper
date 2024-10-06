@@ -1,0 +1,134 @@
+[
+    {
+        "name": "stuttgart",
+        "area": 152
+    },
+    {
+        "name": "mannheim",
+        "area": 153
+    },
+    {
+        "name": "heidelberg",
+        "area": 219
+    },
+    {
+        "name": "karlsruhe",
+        "area": 220
+    },
+    {
+        "name": "freiburg",
+        "area": 228
+    },
+    {
+        "name": "munich",
+        "area": 151
+    },
+    {
+        "name": "nurnberg",
+        "area": 154
+    },
+    {
+        "name": "augsburg",
+        "area": 209
+    },
+    {
+        "name": "regensburg",
+        "area": 224
+    },
+    {
+        "name": "berlin",
+        "area": 34
+    },
+    {
+        "name": "brandenburg",
+        "area": 208
+    },
+    {
+        "name": "bremen",
+        "area": 225
+    },
+    {
+        "name": "hamburg",
+        "area": 148
+    },
+    {
+        "name": "frankfurt",
+        "area": 147
+    },
+    {
+        "name": "darmstadt",
+        "area": 229
+    },
+    {
+        "name": "kassel",
+        "area": 233
+    },
+    {
+        "name": "hannover",
+        "area": 146
+    },
+    {
+        "name": "mecklenburgvorpommern",
+        "area": 226
+    },
+    {
+        "name": "cologne",
+        "area": 143
+    },
+    {
+        "name": "dortmundessen",
+        "area": 144
+    },
+    {
+        "name": "dusseldorf",
+        "area": 145
+    },
+    {
+        "name": "bielefeld",
+        "area": 274
+    },
+    {
+        "name": "munster",
+        "area": 275
+    },
+    {
+        "name": "bochum",
+        "area": 298
+    },
+    {
+        "name": "rhinelandpalatinate",
+        "area": 266
+    },
+    {
+        "name": "saarland",
+        "area": 333
+    },
+    {
+        "name": "leipzig",
+        "area": 149
+    },
+    {
+        "name": "dresden",
+        "area": 150
+    },
+    {
+        "name": "chemnitz",
+        "area": 265
+    },
+    {
+        "name": "saxonyanhalt",
+        "area": 227
+    },
+    {
+        "name": "schleswigholstein",
+        "area": 273
+    },
+    {
+        "name": "jena",
+        "area": 210
+    },
+    {
+        "name": "erfurt",
+        "area": 235
+    }
+]
