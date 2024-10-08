@@ -1,0 +1,36 @@
+{
+    "operationName": "GET_EVENT_LISTINGS",
+    "variables": {
+        "filters": {
+            "areas": {
+                "eq": "__AREAS__"
+            },
+            "listingDate": {
+                "gte": "__LISTING_DATE_GTE__"
+            }
+        },
+        "filterOptions": {
+            "genre": true,
+            "eventType": true
+        },
+        "pageSize": 100,
+        "page": 1,
+        "sort": {
+            "listingDate": {
+                "order": "ASCENDING"
+            },
+            "score": {
+                "order": "DESCENDING"
+            },
+            "titleKeyword": {
+                "order": "ASCENDING"
+            }
+        },
+        "includeBumps": true,
+        "areaId": "__AREAS__",
+        "dateRange": {
+            "startDate": "2024-10-06"
+        }
+    },
+    "query": "query GET_EVENT_LISTINGS($filters: FilterInputDtoInput, $filterOptions: FilterOptionsInputDtoInput, $page: Int, $pageSize: Int, $sort: SortInputDtoInput, $includeBumps: Boolean!, $areaId: ID, $dateRange: DateRangeInput) {\n  eventListings(\n    filters: $filters\n    filterOptions: $filterOptions\n    pageSize: $pageSize\n    page: $page\n    sort: $sort\n  ) {\n    data {\n      id\n      listingDate\n      event {\n        ...eventListingsFields\n        artists {\n          id\n          name\n          __typename\n        }\n        __typename\n      }\n      __typename\n    }\n    filterOptions {\n      genre {\n        label\n        value\n        count\n        __typename\n      }\n      eventType {\n        value\n        count\n        __typename\n      }\n      location {\n        value {\n          from\n          to\n          __typename\n        }\n        count\n        __typename\n      }\n      __typename\n    }\n    totalResults\n    __typename\n  }\n  bumps(areaId: $areaId, dateRange: $dateRange) @include(if: $includeBumps) {\n    bumpDecision {\n      id\n      date\n      eventId\n      clickUrl\n      impressionUrl\n      event {\n        ...eventListingsFields\n        artists {\n          id\n          name\n          __typename\n        }\n        __typename\n      }\n      __typename\n    }\n    cursor\n    __typename\n  }\n}\n\nfragment eventListingsFields on Event {\n  id\n  date\n  startTime\n  endTime\n  title\n  contentUrl\n  flyerFront\n  isTicketed\n  interestedCount\n  isSaved\n  isInterested\n  queueItEnabled\n  newEventForm\n  images {\n    id\n    filename\n    alt\n    type\n    crop\n    __typename\n  }\n  pick {\n    id\n    blurb\n    __typename\n  }\n  venue {\n    id\n    name\n    contentUrl\n    live\n    __typename\n  }\n  __typename\n}\n"
+}
