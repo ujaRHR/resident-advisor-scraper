@@ -2,7 +2,7 @@
 
 ## Installation
 1. Clone the repository or download the source code.
-2. Run pip install -r requirements.txt to install the required libraries.
+2. Run ```pip install -r requirements.txt``` to install the required libraries.
 
 ## Example
 To fetch events for area 34 (Berlin, DE) from October 05, 2024, and save them to a JSON file named events/berlin.json, run the following command:
@@ -18,9 +18,10 @@ To fetch events for area 34 (Berlin, DE) from October 05, 2024, and save them to
 
 - requirements.txt: containing all necessary packages to run the program.
 - event_data.py: used to scrape specific event information by passing event ID.
-                      command: python event_data.py event_id -o default.json
+                      command: ``` python event_data.py event_id -o default.json```
 
 - get_area_code.py: used to get area code by location (only valid for Germany).
+                    command: ```python get_area_code.py```
 - duplicate.py: can be used to remove duplicate event_id from events/xxx.json data
 - merge_csv.py: this can be used for merging all CSV files from the outputs folder
 
